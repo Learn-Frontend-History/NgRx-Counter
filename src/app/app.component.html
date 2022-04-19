@@ -1,6 +1,6 @@
-<span>0</span>
+<span>{{ count$ | async }}</span>
 <div>
-  <button>Inc</button>
-  <button>Dec</button>
-  <button>Reset</button>
+  <button (click)="increment()">Inc</button>
+  <button (click)="decrement()">Dec</button>
+  <button (click)="reset()">Reset</button>
 </div>
